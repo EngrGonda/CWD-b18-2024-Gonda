@@ -1,0 +1,64 @@
+.drpdwn{
+    font-size: x-small;
+    width: 200px !important;
+}
+
+.stock-link{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.stock-link-1{
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.stock-icon{
+    text-align: center;
+    width: 50%;
+}
+
+.stock-link-2{
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.stock-link-3{
+    font-size: 20px;
+}
+
+.stock-link-4{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.font__style{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.box{
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+    transition: 1s;
+}
+
+img{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.box:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+.row_container{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+
+
+

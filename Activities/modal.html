@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--Materials Font-->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <!--Font Awesome-->
+            <script src="https://kit.fontawesome.com/f9ade5a001.js" crossorigin="anonymous"></script>
+            <!--Font awesome cdnjs-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <!-- Compiled and minified CSS -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+            
+            <!--Custom CSS-->
+            <link rel="stylesheet" href="style.css">
+
+    <title>Modal</title>
+</head>
+<body>
+    
+    <h1 class="center green-text text-lighten-2">MODALS</h1>
+    <div class="divider"></div>
+    <br>
+    <div class="container">
+        <p>Use a modal for dialog boxes, confirmation messages, or other content that can be called up. In order for the modal to work you have to add the Modal ID to the link of the trigger. To add a close button, just add the class .modal-close to your button.</p>
+        <!--modal trigger-->
+        <a class="waves-effects waves-light btn modal-trigger" href="#modal1">MODAL</a>
+        <!--modal structure-->
+        <div class="modal" id="modal1">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Decline</a>
+        </div>
+        </div>
+
+        <h3 class="green-text text-lighten-2">Modals with Button trigger</h3>
+        <p>If you prefer to use a button to open a modal specify the Modal ID in data-target rather than the href attribute.</p>
+        <!-- Modal Trigger -->
+        <button data-target="modal1" class="btn modal-trigger">Modal</button>
+
+        <h3 class="green-text text-lighten-2">Modals with Fixed Footer</h3>
+        <a class="waves-effects waves-light btn modal-trigger" href="#modal2">MODAL WITH FIXED FOOTER</a>
+
+        <div id="modal2" class=" modal modal-fixed-footer">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Decline</a>
+        </div>
+        </div>
+        <p>If you have content that is very long and you want the action buttons to be visible all the time, you can add the modal-fixed-footer class to the modal.</p>
+
+        <h3 class="green-text text-lighten-2">Buttom Sheet Modals</h3>
+        <a class="waves-effects waves-light btn modal-trigger" href="#modal3">MODAL BUTTOM SHEET STYLE </a>
+
+        <div id="modal3" class="modal bottom-sheet">
+            <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Decline</a>
+        </div>
+        </div>
+
+        <p>Bottom Sheet Modals are good for displaying actions to the user on the bottom of a screen. They still act the same as regular modals.</p>
+
+    </div> <!--End of container-->
+
+    <!--//////////////////////////////////////////////////////-->
+    <div style="height: 1000px;"></div>
+    <!-- Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script>
+
+$(document).ready(function(){
+
+$('.modal').modal();
+
+
+});//end
+
+</script>
+</body>
+</html>
